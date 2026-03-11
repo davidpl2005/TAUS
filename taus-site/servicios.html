@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <title>TAUS — Servicios</title>
+
+  <meta name="description" content="Servicios TAUS: diseño arquitectónico, urbanismo, cabida, patología, BIM, renders y obra civil con enfoque sostenible." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- SPLASH -->
+  <div id="splash" class="splash" aria-hidden="false">
+    <div class="splash__inner">
+      <div class="splash__logoWrap">
+        <img class="splash__logo" src="assets/img/logo-taus.png" alt="TAUS" />
+      </div>
+      <div class="splash__brand">
+        <div class="splash__name">TAUS</div>
+        <div class="splash__tag" data-i18n="splash_tag">Taller de Arquitectura, Urbanismo y Sostenibilidad</div>
+      </div>
+      <div class="splash__loader" aria-label="Cargando">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPBAR -->
+  <div class="topbar" role="banner">
+    <div class="container topbar__grid">
+      <div class="topbar__item">
+        <img class="flag" src="assets/img/flags/co.png" alt="Colombia" />
+        <a class="topbar__link" href="tel:+573238650729">
+          <span class="ico" aria-hidden="true">☎</span><span>+57 323 865 0729</span>
+        </a>
+        <span class="sep" aria-hidden="true">•</span>
+        <span class="topbar__text">
+          <img class="flag flag--mini" src="assets/img/flags/co.png" alt="Colombia" />
+          <span data-i18n="addr_co">Centro, Edificio Arnold Puello, Oficina 304 — Cartagena, Colombia</span>
+        </span>
+      </div>
+
+      <div class="topbar__item topbar__item--right">
+        <img class="flag" src="assets/img/flags/us.png" alt="United States" />
+        <a class="topbar__link" href="tel:+18882498704">
+          <span class="ico" aria-hidden="true">☎</span><span>+1 888 249 8704</span>
+        </a>
+        <span class="sep" aria-hidden="true">•</span>
+        <span class="topbar__text">
+          <img class="flag flag--mini" src="assets/img/flags/us.png" alt="United States" />
+          <span data-i18n="addr_us">66 W Flagler Street, Suite 900, PMB 10786 — Miami, FL 33130</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header header--light" id="header">
+    <div class="container header__row">
+
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img class="brand__logo" src="assets/img/logo-taus.png" alt="TAUS" />
+      </a>
+
+      <div class="header__right">
+        <div class="langSwitch" aria-label="Cambiar idioma">
+          <button class="langBtn is-active" type="button" data-lang="es">
+            <img class="flag flag--mini" src="assets/img/flags/co.png" alt="ES" /> ES
+          </button>
+          <button class="langBtn" type="button" data-lang="en">
+            <img class="flag flag--mini" src="assets/img/flags/us.png" alt="EN" /> EN
+          </button>
+        </div>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false">
+            <span class="nav__toggleBars" aria-hidden="true"></span>
+            <span class="sr-only">Abrir menú</span>
+          </button>
+
+          <ul class="nav__menu" id="navMenu">
+            <li class="nav__item"><a class="nav__link" href="index.html" data-i18n="nav_home">Inicio</a></li>
+
+            <li class="nav__item"><a class="nav__link" href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+
+            <li class="nav__item"><a class="nav__link" href="nosotros.html" data-i18n="nav_about">Nosotros</a></li>
+            <li class="nav__item"><a class="nav__link" href="proyectos.html" data-i18n="nav_projects">Proyectos</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+
+            <li class="nav__item nav__item--cta">
+              <a class="btn btn--gold" href="#" id="btnPlataforma" data-i18n="nav_platform">Entrar a la plataforma</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO editorial (sin slider aquí: más limpio) -->
+    <section class="chapter" aria-label="Servicios TAUS">
+      <div class="container">
+        <div class="chapter__grid">
+          <div class="chapter__left reveal">
+            <div class="kicker">SERVICIOS</div>
+            <h1 class="chapter__title" style="margin-top:14px;">
+              <span>Servicios</span><br>
+              <span class="gold">precisos</span><br>
+              <span>y construibles.</span>
+            </h1>
+          </div>
+
+          <div class="chapter__right reveal">
+            <div class="infoCard">
+              <h3 class="infoCard__h">¿Cómo trabajamos?</h3>
+              <p class="infoCard__p">
+                En TAUS organizamos el proceso para que cada entrega sea clara, estética y técnicamente sólida.
+                Selecciona un servicio y verás el alcance recomendado.
+              </p>
+              <div class="infoPills">
+                <span class="pill">Diagnóstico</span>
+                <span class="pill">Diseño</span>
+                <span class="pill">Coordinación</span>
+                <span class="pill">Ejecución</span>
+              </div>
+              <div class="infoCard__actions">
+                <a class="btn btn--gold" href="contacto.html">Cotizar</a>
+                <a class="btn btn--outline" href="#diseno-arquitectonico">Ver detalle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL BLEED (visual intermedio tipo video) -->
+    <section class="fullBleed fullBleed--short" aria-label="Imagen servicios">
+      <div class="fullBleed__img" style="background-image:url('assets/img/projects/proyecto-1.jpg');" aria-hidden="true"></div>
+      <div class="fullBleed__cap container">
+        <div class="glassCard reveal">
+          <div class="glassCard__kicker">ENFOQUE</div>
+          <div class="glassCard__title">Simplicidad visual, rigor técnico</div>
+          <div class="glassCard__text">Cada servicio se traduce en entregables claros y decisiones construibles.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOQUES SERVICIO (diagonal split) -->
+    <!-- 1 -->
+    <section class="diag" id="diseno-arquitectonico" aria-label="Diseño arquitectónico">
+      <div class="container">
+        <div class="diag__wrap reveal">
+          <div class="diag__media" style="background-image:url('assets/img/services/servicio-1.jpg');" aria-hidden="true"></div>
+          <div class="diag__content">
+            <div class="infoCard infoCard--tight">
+              <div class="kicker" data-i18n="srv_1">Diseño arquitectónico</div>
+              <h2 class="section__title section__title--sm">De la idea a un proyecto listo para ejecutar</h2>
+              <p class="section__lead">
+                Conceptualización, anteproyecto y desarrollo. Te entregamos una propuesta estética y técnica con
+                decisiones claras en distribución, materialidad y normativa.
+              </p>
+
+              <div class="iconGrid">
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Anteproyecto</div>
+                    <div class="iconItem__s">Plantas, volumetría, criterios de diseño</div>
+                  </div>
+                </div>
+
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Desarrollo</div>
+                    <div class="iconItem__s">Detalles, especificaciones y coordinación</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="infoCard__actions">
+                <a class="btn btn--gold" href="contacto.html">Solicitar propuesta</a>
+                <a class="btn btn--outline" href="#urbanismo-paisajismo">Siguiente</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dividerSoft" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="diag" id="urbanismo-paisajismo" aria-label="Urbanismo y paisajismo">
+      <div class="container">
+        <div class="diag__wrap reveal">
+          <div class="diag__media" style="background-image:url('assets/img/services/servicio-2.jpg');" aria-hidden="true"></div>
+          <div class="diag__content">
+            <div class="infoCard infoCard--tight">
+              <div class="kicker" data-i18n="srv_2">Urbanismo y paisajismo</div>
+              <h2 class="section__title section__title--sm">Espacio público y entorno con criterio</h2>
+              <p class="section__lead">
+                Diseñamos el entorno para potenciar el proyecto: circulación, zonas, materialidad, confort,
+                paisaje y relación con el contexto urbano.
+              </p>
+
+              <div class="iconGrid">
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Estrategia urbana</div>
+                    <div class="iconItem__s">Conectividad, jerarquías, accesibilidad</div>
+                  </div>
+                </div>
+
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Paisaje</div>
+                    <div class="iconItem__s">Sombra, vegetación, mobiliario y confort</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="infoCard__actions">
+                <a class="btn btn--gold" href="contacto.html">Cotizar</a>
+                <a class="btn btn--outline" href="#cabida">Siguiente</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dividerSoft" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="diag" id="cabida" aria-label="Consultoría y análisis de cabida">
+      <div class="container">
+        <div class="diag__wrap reveal">
+          <div class="diag__media" style="background-image:url('assets/img/services/servicio-3.jpg');" aria-hidden="true"></div>
+          <div class="diag__content">
+            <div class="infoCard infoCard--tight">
+              <div class="kicker" data-i18n="srv_3">Consultoría y análisis de cabida</div>
+              <h2 class="section__title section__title--sm">Antes de invertir: claridad normativa</h2>
+              <p class="section__lead">
+                Evaluamos posibilidades reales: norma, área, retiros, alturas, usos, potencial y restricciones.
+                Ideal para decisiones de compra y prefactibilidad.
+              </p>
+
+              <div class="iconGrid">
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Diagnóstico</div>
+                    <div class="iconItem__s">Norma aplicable y variables del predio</div>
+                  </div>
+                </div>
+
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Propuesta de cabida</div>
+                    <div class="iconItem__s">Escenarios y recomendación técnica</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="infoCard__actions">
+                <a class="btn btn--gold" href="contacto.html">Solicitar análisis</a>
+                <a class="btn btn--outline" href="#patologia">Siguiente</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dividerSoft" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="diag" id="patologia" aria-label="Patología de edificaciones">
+      <div class="container">
+        <div class="diag__wrap reveal">
+          <div class="diag__media" style="background-image:url('assets/img/services/servicio-4.jpg');" aria-hidden="true"></div>
+          <div class="diag__content">
+            <div class="infoCard infoCard--tight">
+              <div class="kicker" data-i18n="srv_4">Patología de edificaciones</div>
+              <h2 class="section__title section__title--sm">Diagnóstico de daños y soluciones</h2>
+              <p class="section__lead">
+                Inspección, análisis de fallas, humedad, fisuras y deterioro. Proponemos soluciones con criterio técnico
+                y plan de intervención.
+              </p>
+
+              <div class="iconGrid">
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Inspección</div>
+                    <div class="iconItem__s">Registro, evidencia y causas probables</div>
+                  </div>
+                </div>
+
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Intervención</div>
+                    <div class="iconItem__s">Recomendaciones y especificación</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="infoCard__actions">
+                <a class="btn btn--gold" href="contacto.html">Agendar visita</a>
+                <a class="btn btn--outline" href="#bim">Siguiente</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dividerSoft" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 5 -->
+    <section class="diag" id="bim" aria-label="CAD, renders y BIM">
+      <div class="container">
+        <div class="diag__wrap reveal">
+          <div class="diag__media" style="background-image:url('assets/img/services/servicio-5.jpg');" aria-hidden="true"></div>
+          <div class="diag__content">
+            <div class="infoCard infoCard--tight">
+              <div class="kicker" data-i18n="srv_5">CAD, renders y BIM</div>
+              <h2 class="section__title section__title--sm">Visualización y coordinación</h2>
+              <p class="section__lead">
+                Modelado, documentación, renders y coordinación para reducir reprocesos. Ideal para equipos técnicos
+                y obras con alta exigencia.
+              </p>
+
+              <div class="iconGrid">
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Modelado BIM</div>
+                    <div class="iconItem__s">Compatibilización y control</div>
+                  </div>
+                </div>
+
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Renders</div>
+                    <div class="iconItem__s">Imágenes para venta y aprobación</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="infoCard__actions">
+                <a class="btn btn--gold" href="contacto.html">Solicitar servicio</a>
+                <a class="btn btn--outline" href="#obra">Siguiente</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dividerSoft" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section class="diag" id="obra" aria-label="Obra civil y urbana">
+      <div class="container">
+        <div class="diag__wrap reveal">
+          <div class="diag__media" style="background-image:url('assets/img/services/servicio-6.jpg');" aria-hidden="true"></div>
+          <div class="diag__content">
+            <div class="infoCard infoCard--tight">
+              <div class="kicker" data-i18n="srv_6">Obra civil y urbana</div>
+              <h2 class="section__title section__title--sm">Ejecución con control y estética</h2>
+              <p class="section__lead">
+                Coordinación y ejecución de obra con enfoque en calidad, tiempos, presupuesto y acabados.
+                Gestión clara y comunicación constante.
+              </p>
+
+              <div class="iconGrid">
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Plan de obra</div>
+                    <div class="iconItem__s">Cronograma, hitos, control</div>
+                  </div>
+                </div>
+
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t">Calidad</div>
+                    <div class="iconItem__s">Supervisión y acabados</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="infoCard__actions">
+                <a class="btn btn--gold" href="contacto.html">Cotizar obra</a>
+                <a class="btn btn--outline" href="#header">Volver arriba</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="ctaWhite" aria-label="CTA final">
+      <div class="container">
+        <div class="ctaWhite__wrap reveal">
+          <div class="ctaWhite__left">
+            <div class="kicker">CONTACTO</div>
+            <h2 class="ctaWhite__title">¿Listo para empezar?</h2>
+            <p class="ctaWhite__text">
+              Escríbenos y definimos el alcance perfecto para tu proyecto. Respuesta rápida, propuesta clara, estética premium.
+            </p>
+          </div>
+
+          <div class="ctaWhite__right">
+            <div class="ctaCardMini">
+              <div class="ctaCardMini__row">
+                <span class="ico">☎</span> <a href="tel:+573238650729">+57 323 865 0729</a>
+              </div>
+              <div class="ctaCardMini__row">
+                <span class="ico">✉</span> <a href="mailto:info@taus-arq.com">info@taus-arq.com</a>
+              </div>
+              <div class="ctaCardMini__row">
+                <img class="flag flag--mini" src="assets/img/flags/co.png" alt="Colombia">
+                <span data-i18n="footer_co">Cartagena — Colombia</span>
+              </div>
+              <div class="ctaCardMini__actions">
+                <a class="btn btn--gold" href="contacto.html">Contactar</a>
+                <a class="btn btn--outline" href="proyectos.html">Proyectos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__grid">
+
+      <div class="footer__col">
+        <img class="footer__logo" src="assets/img/logo-taus.png" alt="TAUS" />
+        <p class="footer__text" data-i18n="footer_text">
+          TAUS — Taller de Arquitectura, Urbanismo y Sostenibilidad. Diseño, consultoría, BIM y obra con enfoque sostenible.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer_menu">Menú</h4>
+        <ul class="footer__links">
+          <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+          <li><a href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+          <li><a href="nosotros.html" data-i18n="nav_about">Nosotros</a></li>
+          <li><a href="proyectos.html" data-i18n="nav_projects">Proyectos</a></li>
+          <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+          <li><a href="#" target="_blank" rel="noopener" data-i18n="footer_priv">Políticas de privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer_info">+ Info</h4>
+        <ul class="footer__info">
+          <li><span class="ico" aria-hidden="true">☎</span> <a href="tel:+573238650729">(+57) 323 865 0729</a></li>
+          <li><span class="ico" aria-hidden="true">✉</span> <a href="mailto:info@taus-arq.com">info@taus-arq.com</a></li>
+          <li><img class="flag flag--mini" src="assets/img/flags/co.png" alt="Colombia"> <span data-i18n="footer_co">Cartagena — Colombia</span></li>
+          <li><img class="flag flag--mini" src="assets/img/flags/us.png" alt="USA"> <span data-i18n="footer_us">Miami, FL — USA</span></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--right">
+        <h4 data-i18n="footer_social">Síguenos</h4>
+        <div class="footer__social">
+          <a class="social" href="#" aria-label="Instagram">⌁</a>
+          <a class="social" href="#" aria-label="Facebook">⌁</a>
+          <a class="social" href="#" aria-label="LinkedIn">⌁</a>
+        </div>
+
+        <a class="toTop" href="#header" aria-label="Volver arriba">↑</a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottomRow">
+        <span>© <span id="year"></span> TAUS. <span data-i18n="footer_rights">Todos los derechos reservados.</span></span>
+        <span class="footer__dev" data-i18n="footer_dev">Diseño & Desarrollo: TAUS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

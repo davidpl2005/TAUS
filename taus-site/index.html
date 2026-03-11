@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <title>TAUS — Taller de Arquitectura, Urbanismo y Sostenibilidad</title>
+
+  <meta name="description" content="TAUS — Taller de Arquitectura, Urbanismo y Sostenibilidad. Diseño arquitectónico, urbanismo, BIM, consultoría y construcción con enfoque sostenible." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- =========================
+       INTRO / SPLASH (pastel + card)
+  ========================== -->
+  <div id="splash" class="splash" aria-hidden="false">
+    <div class="splash__inner">
+      <div class="splash__logoWrap">
+        <img class="splash__logo" src="assets/img/logo-taus.png" alt="TAUS" />
+      </div>
+
+      <div class="splash__brand">
+        <div class="splash__name">TAUS</div>
+        <div class="splash__tag" data-i18n="splash_tag">
+          Taller de Arquitectura, Urbanismo y Sostenibilidad
+        </div>
+      </div>
+
+      <div class="splash__loader" aria-label="Cargando">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+       TOPBAR (minimal)
+  ========================== -->
+  <div class="topbar" role="banner">
+    <div class="container topbar__grid">
+
+      <div class="topbar__item">
+        <img class="flag" src="assets/img/flags/co.png" alt="Colombia" />
+        <a class="topbar__link" href="tel:+573238650729" title="Llamar a TAUS en Cartagena">
+          <span class="ico" aria-hidden="true">☎</span>
+          <span>+57 323 865 0729</span>
+        </a>
+        <span class="sep" aria-hidden="true">•</span>
+        <span class="topbar__text">
+          <img class="flag flag--mini" src="assets/img/flags/co.png" alt="Colombia" />
+          <span data-i18n="addr_co">Centro, Edificio Arnold Puello, Oficina 304 — Cartagena, Colombia</span>
+        </span>
+      </div>
+
+      <div class="topbar__item topbar__item--right">
+        <img class="flag" src="assets/img/flags/us.png" alt="United States" />
+        <a class="topbar__link" href="tel:+18882498704" title="Call TAUS in Miami">
+          <span class="ico" aria-hidden="true">☎</span>
+          <span>+1 888 249 8704</span>
+        </a>
+        <span class="sep" aria-hidden="true">•</span>
+        <span class="topbar__text">
+          <img class="flag flag--mini" src="assets/img/flags/us.png" alt="United States" />
+          <span data-i18n="addr_us">66 W Flagler Street, Suite 900, PMB 10786 — Miami, FL 33130</span>
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================
+       HEADER (white minimal)
+  ========================== -->
+  <header class="header header--light" id="header">
+    <div class="container header__row">
+
+      <!-- Brand: SOLO LOGO -->
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img class="brand__logo" src="assets/img/logo-taus.png" alt="TAUS" />
+      </a>
+
+      <div class="header__right">
+
+        <!-- Idioma -->
+        <div class="langSwitch" aria-label="Cambiar idioma">
+          <button class="langBtn is-active" type="button" data-lang="es">
+            <img class="flag flag--mini" src="assets/img/flags/co.png" alt="ES" />
+            ES
+          </button>
+          <button class="langBtn" type="button" data-lang="en">
+            <img class="flag flag--mini" src="assets/img/flags/us.png" alt="EN" />
+            EN
+          </button>
+        </div>
+
+        <!-- Nav -->
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false">
+            <span class="nav__toggleBars" aria-hidden="true"></span>
+            <span class="sr-only">Abrir menú</span>
+          </button>
+
+          <ul class="nav__menu" id="navMenu">
+            <li class="nav__item"><a class="nav__link is-active" href="index.html" data-i18n="nav_home">Inicio</a></li>
+
+            <li class="nav__item"><a class="nav__link" href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+
+            <li class="nav__item"><a class="nav__link" href="nosotros.html" data-i18n="nav_about">Nosotros</a></li>
+            <li class="nav__item"><a class="nav__link" href="proyectos.html" data-i18n="nav_projects">Proyectos</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+
+            <li class="nav__item nav__item--cta">
+              <a class="btn btn--gold" href="#" id="btnPlataforma" data-i18n="nav_platform">Entrar a la plataforma</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================
+       MAIN — estilo video (white editorial + full images + cards)
+  ========================== -->
+  <main>
+
+    <!-- HERO: full image + text editorial + small info cards -->
+    <section class="hero hero--light" aria-label="Hero principal">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__slide is-active" style="background-image:url('assets/img/hero/hero-1.jpg');"></div>
+        <div class="hero__slide" style="background-image:url('assets/img/hero/hero-2.jpg');"></div>
+        <div class="hero__slide" style="background-image:url('assets/img/hero/hero-3.jpg');"></div>
+        <div class="hero__overlay hero__overlay--light"></div>
+      </div>
+
+      <div class="container hero__content hero__content--light">
+        <div class="hero__badge reveal">
+          <span class="dot"></span>
+          <span data-i18n="hero_badge">Estudio de Arquitectura & Desarrollo Urbano</span>
+        </div>
+
+        <h1 class="hero__title hero__title--light reveal">
+          <span data-i18n="hero_title_1">Diseño con propósito.</span><br>
+          <span class="gold" data-i18n="hero_title_2">Sostenibilidad</span>
+          <span data-i18n="hero_title_3">con carácter.</span>
+        </h1>
+
+        <p class="hero__subtitle hero__subtitle--light reveal" data-i18n="hero_subtitle">
+          En TAUS unimos arquitectura, urbanismo y tecnología para transformar ideas en espacios que funcionan,
+          inspiran y perduran. Procesos claros, entregables profesionales y acompañamiento integral.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a class="btn btn--light" href="#capitulos" data-i18n="hero_cta_2">Ver servicios</a>
+          <a class="btn btn--ghostDark" href="contacto.html" data-i18n="hero_cta_3">Contáctanos</a>
+        </div>
+
+        <!-- mini cards -->
+        <div class="heroMini reveal">
+          <div class="miniCard">
+            <div class="miniCard__num">+10</div>
+            <div class="miniCard__txt" data-i18n="hero_kpi_1">Años de experiencia</div>
+          </div>
+          <div class="miniCard">
+            <div class="miniCard__num">BIM</div>
+            <div class="miniCard__txt" data-i18n="hero_kpi_2">Modelado & coordinación</div>
+          </div>
+          <div class="miniCard">
+            <div class="miniCard__num">360°</div>
+            <div class="miniCard__txt" data-i18n="hero_kpi_3">Acompañamiento integral</div>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll hero__scroll--dark" href="#capitulos" aria-label="Bajar">
+        <span class="mouse" aria-hidden="true"></span>
+        <span class="hero__scrollText" data-i18n="scroll">Desliza</span>
+      </a>
+    </section>
+
+    <!-- CAPÍTULO 1: editorial big text (como el video) -->
+    <section class="chapter" id="capitulos" aria-label="Capítulo 1">
+      <div class="container">
+        <div class="chapter__grid">
+          <div class="chapter__left reveal">
+            <div class="kicker" data-i18n="ch1_kicker">NUESTRA ESENCIA</div>
+            <h2 class="chapter__title">
+              <span data-i18n="ch1_title_1">Arquitectura</span><br>
+              <span class="gold" data-i18n="ch1_title_2">con visión</span><br>
+              <span data-i18n="ch1_title_3">urbana.</span>
+            </h2>
+          </div>
+
+          <div class="chapter__right reveal">
+            <div class="infoCard">
+              <h3 class="infoCard__h" data-i18n="ch1_card_title">¿Qué hacemos en TAUS?</h3>
+              <p class="infoCard__p" data-i18n="ch1_card_text">
+                Diseñamos y ejecutamos proyectos con enfoque sostenible: arquitectura, urbanismo, BIM, consultoría
+                y obra. Nuestro diferencial es el proceso: claridad, precisión y estética.
+              </p>
+
+              <div class="infoPills">
+                <span class="pill" data-i18n="pill_1">Normativa & Cabida</span>
+                <span class="pill" data-i18n="pill_2">BIM & Coordinación</span>
+                <span class="pill" data-i18n="pill_3">Diseño & Obra</span>
+              </div>
+
+              <div class="infoCard__actions">
+                <a class="btn btn--gold" href="nosotros.html" data-i18n="hero_cta_1">Conócenos</a>
+                <a class="btn btn--outline" href="servicios.html" data-i18n="hero_cta_2">Ver servicios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL IMAGE (como el video) -->
+    <section class="fullBleed" aria-label="Imagen destacada">
+      <div class="fullBleed__img" style="background-image:url('assets/img/projects/proyecto-1.jpg');" aria-hidden="true"></div>
+      <div class="fullBleed__cap container">
+        <div class="glassCard reveal">
+          <div class="glassCard__kicker" data-i18n="img1_kicker">PROYECTO DESTACADO</div>
+          <div class="glassCard__title" data-i18n="img1_title">Espacios que elevan la experiencia</div>
+          <div class="glassCard__text" data-i18n="img1_text">Diseño funcional, estética limpia y decisiones sostenibles desde la fase 0.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO 2: split diagonal (imagen + card, NO full screen) -->
+    <section class="diag" aria-label="Servicios destacados">
+      <div class="container">
+        <div class="diag__wrap reveal">
+          <div class="diag__media" style="background-image:url('assets/img/projects/proyecto-2.jpg');" aria-hidden="true"></div>
+
+          <div class="diag__content">
+            <div class="infoCard infoCard--tight">
+              <div class="kicker" data-i18n="ch2_kicker">SERVICIOS</div>
+              <h2 class="section__title section__title--sm" data-i18n="ch2_title">Servicios pensados para decisiones correctas</h2>
+              <p class="section__lead" data-i18n="ch2_text">
+                Desde el diseño arquitectónico hasta la construcción, pasando por cabida y BIM.
+                Todo con un lenguaje visual premium y entregables profesionales.
+              </p>
+
+              <div class="iconGrid">
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t" data-i18n="srv_1">Diseño arquitectónico</div>
+                    <div class="iconItem__s" data-i18n="srv_1s">Concepto, anteproyecto y desarrollo</div>
+                  </div>
+                </div>
+
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t" data-i18n="srv_2">Urbanismo y paisajismo</div>
+                    <div class="iconItem__s" data-i18n="srv_2s">Espacio público y entorno</div>
+                  </div>
+                </div>
+
+                <div class="iconItem">
+                  <div class="iconDot"></div>
+                  <div>
+                    <div class="iconItem__t" data-i18n="srv_5">CAD, renders y BIM</div>
+                    <div class="iconItem__s" data-i18n="srv_5s">Precisión, coordinación y visualización</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="infoCard__actions">
+                <a class="btn btn--gold" href="servicios.html" data-i18n="ch2_btn1">Ver todos los servicios</a>
+                <a class="btn btn--outline" href="contacto.html" data-i18n="ch2_btn2">Cotizar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transición suave a siguiente sección -->
+        <div class="dividerSoft" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO 3: números grandes (como el video) -->
+    <section class="metrics" aria-label="Métricas y beneficios">
+      <div class="container">
+        <div class="metrics__head reveal">
+          <div class="kicker" data-i18n="met_kicker">BENEFICIOS</div>
+          <h2 class="section__title" data-i18n="met_title">Resultados que se sienten en obra y en valor</h2>
+          <p class="section__lead" data-i18n="met_text">
+            Menos reprocesos, más claridad y una estética consistente de principio a fin.
+          </p>
+        </div>
+
+        <div class="metrics__grid">
+          <div class="metricCard reveal">
+            <div class="metricCard__num">-30%</div>
+            <div class="metricCard__t" data-i18n="met_1t">Reprocesos</div>
+            <div class="metricCard__p" data-i18n="met_1p">Con coordinación BIM y validación temprana.</div>
+          </div>
+
+          <div class="metricCard reveal">
+            <div class="metricCard__num">+100%</div>
+            <div class="metricCard__t" data-i18n="met_2t">Claridad</div>
+            <div class="metricCard__p" data-i18n="met_2p">Entregables y comunicación profesional.</div>
+          </div>
+
+          <div class="metricCard reveal">
+            <div class="metricCard__num">360°</div>
+            <div class="metricCard__t" data-i18n="met_3t">Acompañamiento</div>
+            <div class="metricCard__p" data-i18n="met_3p">De idea a ejecución con control.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL IMAGE 2 -->
+    <section class="fullBleed fullBleed--short" aria-label="Imagen 2">
+      <div class="fullBleed__img" style="background-image:url('assets/img/projects/proyecto-3.jpg');" aria-hidden="true"></div>
+      <div class="fullBleed__cap container">
+        <div class="glassCard reveal">
+          <div class="glassCard__kicker" data-i18n="img2_kicker">PROCESO</div>
+          <div class="glassCard__title" data-i18n="img2_title">Del concepto al detalle</div>
+          <div class="glassCard__text" data-i18n="img2_text">Un flujo claro: diagnóstico → diseño → coordinación → ejecución.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS: grid tipo editorial -->
+    <section class="projects" aria-label="Proyectos">
+      <div class="container">
+        <div class="projects__head reveal">
+          <div class="kicker" data-i18n="pr_kicker">PROYECTOS</div>
+          <h2 class="section__title" data-i18n="pr_title">Composiciones limpias, impacto real</h2>
+          <p class="section__lead" data-i18n="pr_text">Una selección visual. En “Proyectos” verás el portafolio completo.</p>
+        </div>
+
+        <div class="projGrid">
+          <a class="projItem reveal" href="proyectos.html" aria-label="Proyecto 1">
+            <div class="projItem__img" style="background-image:url('assets/img/projects/proyecto-1.jpg');"></div>
+            <div class="projItem__cap">
+              <div class="projItem__t" data-i18n="pr_1t">Residencial</div>
+              <div class="projItem__s" data-i18n="pr_1s">Diseño + coordinación</div>
+            </div>
+          </a>
+
+          <a class="projItem reveal" href="proyectos.html" aria-label="Proyecto 2">
+            <div class="projItem__img" style="background-image:url('assets/img/projects/proyecto-2.jpg');"></div>
+            <div class="projItem__cap">
+              <div class="projItem__t" data-i18n="pr_2t">Urbano</div>
+              <div class="projItem__s" data-i18n="pr_2s">Entorno + sostenibilidad</div>
+            </div>
+          </a>
+
+          <a class="projItem reveal" href="proyectos.html" aria-label="Proyecto 3">
+            <div class="projItem__img" style="background-image:url('assets/img/projects/proyecto-3.jpg');"></div>
+            <div class="projItem__cap">
+              <div class="projItem__t" data-i18n="pr_3t">Comercial</div>
+              <div class="projItem__s" data-i18n="pr_3s">Renders + precisión</div>
+            </div>
+          </a>
+
+          <a class="projItem reveal" href="proyectos.html" aria-label="Proyecto 4">
+            <div class="projItem__img" style="background-image:url('assets/img/projects/proyecto-4.jpg');"></div>
+            <div class="projItem__cap">
+              <div class="projItem__t" data-i18n="pr_4t">BIM</div>
+              <div class="projItem__s" data-i18n="pr_4s">Coordinación + obra</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="centerActions reveal">
+          <a class="btn btn--gold" href="proyectos.html" data-i18n="pr_btn">Ver portafolio completo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="ctaWhite" aria-label="Contacto final">
+      <div class="container">
+        <div class="ctaWhite__wrap reveal">
+          <div class="ctaWhite__left">
+            <div class="kicker" data-i18n="cta_kicker">CONTACTO</div>
+            <h2 class="ctaWhite__title" data-i18n="cta_title">Hablemos de tu proyecto</h2>
+            <p class="ctaWhite__text" data-i18n="cta_text">
+              Cuéntanos qué necesitas y te proponemos el mejor camino técnico y estético, con enfoque sostenible.
+            </p>
+          </div>
+
+          <div class="ctaWhite__right">
+            <div class="ctaCardMini">
+              <div class="ctaCardMini__row">
+                <span class="ico">☎</span> <a href="tel:+573238650729">+57 323 865 0729</a>
+              </div>
+              <div class="ctaCardMini__row">
+                <span class="ico">✉</span> <a href="mailto:info@taus-arq.com">info@taus-arq.com</a>
+              </div>
+              <div class="ctaCardMini__row">
+                <img class="flag flag--mini" src="assets/img/flags/co.png" alt="Colombia"> <span data-i18n="footer_co">Cartagena — Colombia</span>
+              </div>
+              <div class="ctaCardMini__actions">
+                <a class="btn btn--gold" href="contacto.html" data-i18n="cta_btn1">Contactar</a>
+                <a class="btn btn--outline" href="servicios.html" data-i18n="cta_btn2">Servicios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================
+       FOOTER (dark premium)
+  ========================== -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__grid">
+
+      <div class="footer__col">
+        <img class="footer__logo" src="assets/img/logo-taus.png" alt="TAUS" />
+        <p class="footer__text" data-i18n="footer_text">
+          TAUS — Taller de Arquitectura, Urbanismo y Sostenibilidad. Diseño, consultoría, BIM y obra con enfoque sostenible.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer_menu">Menú</h4>
+        <ul class="footer__links">
+          <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+          <li><a href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+          <li><a href="nosotros.html" data-i18n="nav_about">Nosotros</a></li>
+          <li><a href="proyectos.html" data-i18n="nav_projects">Proyectos</a></li>
+          <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+          <li><a href="#" target="_blank" rel="noopener" data-i18n="footer_priv">Políticas de privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer_info">+ Info</h4>
+        <ul class="footer__info">
+          <li><span class="ico" aria-hidden="true">☎</span> <a href="tel:+573238650729">(+57) 323 865 0729</a></li>
+          <li><span class="ico" aria-hidden="true">✉</span> <a href="mailto:info@taus-arq.com">info@taus-arq.com</a></li>
+          <li><img class="flag flag--mini" src="assets/img/flags/co.png" alt="Colombia"> <span data-i18n="footer_co">Cartagena — Colombia</span></li>
+          <li><img class="flag flag--mini" src="assets/img/flags/us.png" alt="USA"> <span data-i18n="footer_us">Miami, FL — USA</span></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--right">
+        <h4 data-i18n="footer_social">Síguenos</h4>
+        <div class="footer__social">
+          <a class="social" href="#" aria-label="Instagram">⌁</a>
+          <a class="social" href="#" aria-label="Facebook">⌁</a>
+          <a class="social" href="#" aria-label="LinkedIn">⌁</a>
+        </div>
+
+        <a class="toTop" href="#header" aria-label="Volver arriba">↑</a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottomRow">
+        <span>© <span id="year"></span> TAUS. <span data-i18n="footer_rights">Todos los derechos reservados.</span></span>
+        <span class="footer__dev" data-i18n="footer_dev">Diseño & Desarrollo: TAUS</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
