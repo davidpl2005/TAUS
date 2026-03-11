@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <title>TAUS — Contacto</title>
+
+  <meta name="description" content="Contacta a TAUS — Taller de Arquitectura, Urbanismo y Sostenibilidad. Cartagena, Colombia y Miami, FL. Diseño, BIM, consultoría y obra." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/contacto.css" />
+</head>
+
+<body>
+
+  <!-- SPLASH -->
+  <div id="splash" class="splash" aria-hidden="false">
+    <div class="splash__inner">
+      <div class="splash__logoWrap">
+        <img class="splash__logo" src="assets/img/logo-taus.png" alt="TAUS" />
+      </div>
+      <div class="splash__brand">
+        <div class="splash__name">TAUS</div>
+        <div class="splash__tag" data-i18n="splash_tag">Taller de Arquitectura, Urbanismo y Sostenibilidad</div>
+      </div>
+      <div class="splash__loader" aria-label="Cargando">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPBAR -->
+  <div class="topbar" role="banner">
+    <div class="container topbar__grid">
+      <div class="topbar__item">
+        <img class="flag" src="assets/img/flags/co.png" alt="Colombia" />
+        <a class="topbar__link" href="tel:+573238650729" title="Llamar a TAUS en Cartagena">
+          <span class="ico" aria-hidden="true">☎</span>
+          <span>+57 323 865 0729</span>
+        </a>
+        <span class="sep" aria-hidden="true">•</span>
+        <span class="topbar__text">
+          <img class="flag flag--mini" src="assets/img/flags/co.png" alt="Colombia" />
+          <span data-i18n="addr_co">Centro, Edificio Arnold Puello, Oficina 304 — Cartagena, Colombia</span>
+        </span>
+      </div>
+
+      <div class="topbar__item topbar__item--right">
+        <img class="flag" src="assets/img/flags/us.png" alt="United States" />
+        <a class="topbar__link" href="tel:+18882498704" title="Call TAUS in Miami">
+          <span class="ico" aria-hidden="true">☎</span>
+          <span>+1 888 249 8704</span>
+        </a>
+        <span class="sep" aria-hidden="true">•</span>
+        <span class="topbar__text">
+          <img class="flag flag--mini" src="assets/img/flags/us.png" alt="United States" />
+          <span data-i18n="addr_us">66 W Flagler Street, Suite 900, PMB 10786 — Miami, FL 33130</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header header--light" id="header">
+    <div class="container header__row">
+
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img class="brand__logo" src="assets/img/logo-taus.png" alt="TAUS" />
+      </a>
+
+      <div class="header__right">
+        <div class="langSwitch" aria-label="Cambiar idioma">
+          <button class="langBtn is-active" type="button" data-lang="es">
+            <img class="flag flag--mini" src="assets/img/flags/co.png" alt="ES" /> ES
+          </button>
+          <button class="langBtn" type="button" data-lang="en">
+            <img class="flag flag--mini" src="assets/img/flags/us.png" alt="EN" /> EN
+          </button>
+        </div>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false">
+            <span class="nav__toggleBars" aria-hidden="true"></span>
+            <span class="sr-only">Abrir menú</span>
+          </button>
+
+          <ul class="nav__menu" id="navMenu">
+            <li class="nav__item"><a class="nav__link" href="index.html" data-i18n="nav_home">Inicio</a></li>
+            <li class="nav__item"><a class="nav__link" href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+            <li class="nav__item"><a class="nav__link" href="nosotros.html" data-i18n="nav_about">Nosotros</a></li>
+            <li class="nav__item"><a class="nav__link" href="proyectos.html" data-i18n="nav_projects">Proyectos</a></li>
+            <li class="nav__item"><a class="nav__link is-active" href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+            <li class="nav__item nav__item--cta">
+              <a class="btn btn--gold" href="#" id="btnPlataforma" data-i18n="nav_platform">Entrar a la plataforma</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO EDITORIAL -->
+    <section class="chapter" aria-label="Contacto TAUS">
+      <div class="container">
+        <div class="chapter__grid">
+          <div class="chapter__left reveal">
+            <div class="kicker" data-i18n="cta_kicker">CONTACTO</div>
+            <h1 class="chapter__title" style="margin-top:14px;">
+              <span data-i18n="contact_title_1">Hablemos</span><br>
+              <span class="gold" data-i18n="contact_title_2">de tu</span><br>
+              <span data-i18n="contact_title_3">proyecto.</span>
+            </h1>
+          </div>
+
+          <div class="chapter__right reveal">
+            <div class="infoCard">
+              <h3 class="infoCard__h" data-i18n="contact_card_title">¿Cómo podemos ayudarte?</h3>
+              <p class="infoCard__p" data-i18n="contact_card_text">
+                Cuéntanos qué tienes en mente: diseño, consultoría, BIM, obra o algo más.
+                Respondemos rápido y con claridad. Sin rodeos.
+              </p>
+              <div class="infoPills">
+                <span class="pill" data-i18n="contact_pill_1">Diseño</span>
+                <span class="pill" data-i18n="contact_pill_2">Consultoría</span>
+                <span class="pill" data-i18n="contact_pill_3">BIM</span>
+                <span class="pill" data-i18n="contact_pill_4">Obra</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL BLEED -->
+    <section class="fullBleed fullBleed--short" aria-label="Imagen contacto">
+      <div class="fullBleed__img" style="background-image:url('assets/img/projects/proyecto-3.jpg');" aria-hidden="true"></div>
+      <div class="fullBleed__cap container">
+        <div class="glassCard reveal">
+          <div class="glassCard__kicker" data-i18n="contact_img_kicker">TAUS</div>
+          <div class="glassCard__title" data-i18n="contact_img_title">Una respuesta clara en menos de 24h</div>
+          <div class="glassCard__text" data-i18n="contact_img_text">
+            Cada proyecto empieza por una conversación honesta. Estamos disponibles en Colombia y Miami.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO + DATOS -->
+    <section class="diag" id="formulario" aria-label="Formulario de contacto">
+      <div class="container">
+        <div class="diag__wrap reveal">
+
+          <!-- FORMULARIO (izquierda) -->
+          <div class="diag__content" style="padding: 32px 28px; align-items: start;">
+            <div class="infoCard" style="width: 100%;">
+              <div class="kicker" data-i18n="contact_form_kicker">FORMULARIO</div>
+              <h2 class="section__title section__title--sm" data-i18n="contact_form_title" style="margin-bottom: 18px;">
+                Envíanos tu mensaje
+              </h2>
+
+              <form class="contactForm" id="contactForm" novalidate>
+                <div class="formRow">
+                  <div class="formField">
+                    <label for="nombre" data-i18n="form_label_name">Nombre</label>
+                    <input
+                      type="text"
+                      id="nombre"
+                      name="nombre"
+                      autocomplete="given-name"
+                      data-i18n-placeholder="form_ph_name"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                  <div class="formField">
+                    <label for="empresa" data-i18n="form_label_company">Empresa / Proyecto</label>
+                    <input
+                      type="text"
+                      id="empresa"
+                      name="empresa"
+                      autocomplete="organization"
+                      data-i18n-placeholder="form_ph_company"
+                      placeholder="Opcional"
+                    />
+                  </div>
+                </div>
+
+                <div class="formRow">
+                  <div class="formField">
+                    <label for="email" data-i18n="form_label_email">Correo electrónico</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      autocomplete="email"
+                      data-i18n-placeholder="form_ph_email"
+                      placeholder="hola@ejemplo.com"
+                      required
+                    />
+                  </div>
+                  <div class="formField">
+                    <label for="telefono" data-i18n="form_label_phone">Teléfono / WhatsApp</label>
+                    <input
+                      type="tel"
+                      id="telefono"
+                      name="telefono"
+                      autocomplete="tel"
+                      data-i18n-placeholder="form_ph_phone"
+                      placeholder="+57 300 000 0000"
+                    />
+                  </div>
+                </div>
+
+                <div class="formField formField--full">
+                  <label for="servicio" data-i18n="form_label_service">Servicio de interés</label>
+                  <select id="servicio" name="servicio" required>
+                    <option value="" disabled selected data-i18n="form_select_default">Selecciona un servicio…</option>
+                    <option value="diseno" data-i18n="srv_1">Diseño arquitectónico</option>
+                    <option value="urbanismo" data-i18n="srv_2">Urbanismo y paisajismo</option>
+                    <option value="cabida" data-i18n="srv_3">Consultoría y análisis de cabida</option>
+                    <option value="patologia" data-i18n="srv_4">Patología de edificaciones</option>
+                    <option value="bim" data-i18n="srv_5">CAD, renders y BIM</option>
+                    <option value="obra" data-i18n="srv_6">Obra civil y urbana</option>
+                    <option value="otro" data-i18n="form_option_other">Otro / No estoy seguro</option>
+                  </select>
+                </div>
+
+                <div class="formField formField--full">
+                  <label for="mensaje" data-i18n="form_label_message">Cuéntanos tu proyecto</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    data-i18n-placeholder="form_ph_message"
+                    placeholder="Describe brevemente tu proyecto o consulta: ubicación, alcance, plazo estimado…"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="formActions">
+                  <button class="btn btn--gold" type="submit" id="btnSubmit" data-i18n="form_btn_send">
+                    Enviar mensaje
+                  </button>
+                  <button class="btn btn--outline" type="reset" data-i18n="form_btn_reset">
+                    Limpiar
+                  </button>
+                </div>
+              </form>
+
+              <!-- Estado de éxito -->
+              <div class="formSuccess" id="formSuccess" aria-live="polite">
+                <div class="formSuccess__icon">✓</div>
+                <div class="formSuccess__title" data-i18n="form_success_title">¡Mensaje recibido!</div>
+                <div class="formSuccess__text" data-i18n="form_success_text">
+                  Gracias por contactarnos. Te respondemos en menos de 24 horas hábiles.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DATOS DE CONTACTO (derecha) -->
+          <div class="diag__content" style="background: #f9f8f6; padding: 32px 28px; align-items: start;">
+            <div style="width: 100%;">
+              <div class="kicker" data-i18n="contact_data_kicker">CANALES DIRECTOS</div>
+              <h3 class="section__title section__title--sm" data-i18n="contact_data_title" style="margin-bottom: 16px;">
+                Contáctanos directamente
+              </h3>
+              <p class="section__lead" data-i18n="contact_data_text">
+                Puedes escribirnos por cualquiera de estos medios. Respondemos rápido.
+              </p>
+
+              <!-- Canales rápidos -->
+              <div class="channelRow">
+                <a class="channelBtn" href="tel:+573238650729" aria-label="Llamar Colombia">
+                  <span class="channelBtn__ico">☎</span>
+                  <span>+57 323 865 0729</span>
+                </a>
+                <a class="channelBtn" href="tel:+18882498704" aria-label="Call USA">
+                  <span class="channelBtn__ico">☎</span>
+                  <span>+1 888 249 8704</span>
+                </a>
+                <a class="channelBtn" href="mailto:info@taus-arq.com" aria-label="Email">
+                  <span class="channelBtn__ico">✉</span>
+                  <span>info@taus-arq.com</span>
+                </a>
+                <a class="channelBtn" href="https://wa.me/573238650729" target="_blank" rel="noopener" aria-label="WhatsApp">
+                  <span class="channelBtn__ico">💬</span>
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+
+              <!-- Horario -->
+              <div class="metricCard" style="margin-top: 20px;">
+                <div class="metricCard__num" style="font-size: 20px;">⏱</div>
+                <div class="metricCard__t" data-i18n="contact_hours_title">Tiempo de respuesta</div>
+                <div class="metricCard__p" data-i18n="contact_hours_text">
+                  Respondemos en menos de 24 horas hábiles. Lun – Vie 8:00 a.m. – 6:00 p.m. (COT).
+                </div>
+              </div>
+
+              <!-- Oficinas -->
+              <div style="margin-top: 24px;">
+                <div class="kicker" style="margin-bottom: 12px;" data-i18n="contact_offices_kicker">OFICINAS</div>
+                <div class="officeGrid" style="margin-top: 0;">
+                  <div class="officeCard">
+                    <div class="officeCard__flag">
+                      <img class="flag flag--mini" src="assets/img/flags/co.png" alt="Colombia" />
+                      <span class="officeCard__country" data-i18n="contact_office_co_country">Colombia</span>
+                    </div>
+                    <div class="officeCard__rows">
+                      <div class="officeCard__row">
+                        <span class="officeCard__ico">📍</span>
+                        <span data-i18n="addr_co">Centro, Edificio Arnold Puello, Oficina 304 — Cartagena</span>
+                      </div>
+                      <div class="officeCard__row">
+                        <span class="officeCard__ico">☎</span>
+                        <a href="tel:+573238650729">+57 323 865 0729</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="officeCard">
+                    <div class="officeCard__flag">
+                      <img class="flag flag--mini" src="assets/img/flags/us.png" alt="USA" />
+                      <span class="officeCard__country" data-i18n="contact_office_us_country">USA</span>
+                    </div>
+                    <div class="officeCard__rows">
+                      <div class="officeCard__row">
+                        <span class="officeCard__ico">📍</span>
+                        <span data-i18n="contact_office_us_addr">66 W Flagler St, Suite 900 — Miami, FL</span>
+                      </div>
+                      <div class="officeCard__row">
+                        <span class="officeCard__ico">☎</span>
+                        <a href="tel:+18882498704">+1 888 249 8704</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="dividerSoft" aria-hidden="true"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__grid">
+
+      <div class="footer__col">
+        <img class="footer__logo" src="assets/img/logo-taus.png" alt="TAUS" />
+        <p class="footer__text" data-i18n="footer_text">
+          TAUS — Taller de Arquitectura, Urbanismo y Sostenibilidad. Diseño, consultoría, BIM y obra con enfoque sostenible.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer_menu">Menú</h4>
+        <ul class="footer__links">
+          <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+          <li><a href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+          <li><a href="nosotros.html" data-i18n="nav_about">Nosotros</a></li>
+          <li><a href="proyectos.html" data-i18n="nav_projects">Proyectos</a></li>
+          <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+          <li><a href="#" target="_blank" rel="noopener" data-i18n="footer_priv">Políticas de privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 data-i18n="footer_info">+ Info</h4>
+        <ul class="footer__info">
+          <li><span class="ico" aria-hidden="true">☎</span> <a href="tel:+573238650729">(+57) 323 865 0729</a></li>
+          <li><span class="ico" aria-hidden="true">✉</span> <a href="mailto:info@taus-arq.com">info@taus-arq.com</a></li>
+          <li><img class="flag flag--mini" src="assets/img/flags/co.png" alt="Colombia"> <span data-i18n="footer_co">Cartagena — Colombia</span></li>
+          <li><img class="flag flag--mini" src="assets/img/flags/us.png" alt="USA"> <span data-i18n="footer_us">Miami, FL — USA</span></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--right">
+        <h4 data-i18n="footer_social">Síguenos</h4>
+        <div class="footer__social">
+          <a class="social" href="#" aria-label="Instagram">⌁</a>
+          <a class="social" href="#" aria-label="Facebook">⌁</a>
+          <a class="social" href="#" aria-label="LinkedIn">⌁</a>
+        </div>
+        <a class="toTop" href="#header" aria-label="Volver arriba">↑</a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottomRow">
+        <span>© <span id="year"></span> TAUS. <span data-i18n="footer_rights">Todos los derechos reservados.</span></span>
+        <span class="footer__dev" data-i18n="footer_dev">Diseño & Desarrollo: TAUS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contacto.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* =============================================
+   TAUS — contacto.css
+   Estilos específicos de la página de contacto.
+   Se carga después de styles.css
+============================================= */
+
+/* --- Formulario --- */
+.contactForm {
+  display: grid;
+  gap: 14px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.formField {
+  display: grid;
+  gap: 6px;
+}
+
+.formField label {
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgba(11,11,12,.65);
+}
+
+.formField input,
+.formField select,
+.formField textarea {
+  font-family: var(--font-2);
+  font-size: 14px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid rgba(11,11,12,.14);
+  border-radius: 12px;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.formField select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230b0b0c' fill-opacity='.45' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+.formField input:focus,
+.formField select:focus,
+.formField textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(214,178,76,.16);
+}
+
+.formField input::placeholder,
+.formField textarea::placeholder {
+  color: rgba(11,11,12,.38);
+}
+
+.formField textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.formField--full {
+  grid-column: 1 / -1;
+}
+
+.formActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+/* Estado enviado */
+.formSuccess {
+  display: none;
+  text-align: center;
+  padding: 28px 20px;
+}
+
+.formSuccess__icon {
+  font-size: 38px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.formSuccess__title {
+  font-weight: 950;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.formSuccess__text {
+  font-family: var(--font-2);
+  font-size: 14px;
+  color: rgba(11,11,12,.65);
+}
+
+/* --- Tarjetas de oficina --- */
+.officeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.officeCard {
+  border-radius: var(--radius);
+  border: 1px solid rgba(11,11,12,.10);
+  background: #fff;
+  box-shadow: var(--shadow-2);
+  padding: 20px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.officeCard::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--gold);
+  border-radius: 99px 99px 0 0;
+}
+
+.officeCard__flag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.officeCard__country {
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgba(11,11,12,.70);
+}
+
+.officeCard__rows {
+  display: grid;
+  gap: 8px;
+}
+
+.officeCard__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: var(--font-2);
+  font-size: 13px;
+  color: rgba(11,11,12,.72);
+}
+
+.officeCard__row a {
+  font-weight: 700;
+  color: rgba(11,11,12,.82);
+  transition: color .2s ease;
+}
+
+.officeCard__row a:hover {
+  color: var(--gold);
+}
+
+.officeCard__ico {
+  opacity: .75;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* --- Canales rápidos --- */
+.channelRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.channelBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(11,11,12,.12);
+  background: rgba(255,255,255,.9);
+  font-family: var(--font-2);
+  font-weight: 700;
+  font-size: 13px;
+  color: rgba(11,11,12,.78);
+  box-shadow: var(--shadow-2);
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+  text-decoration: none;
+}
+
+.channelBtn:hover {
+  transform: translateY(-2px);
+  background: #fff;
+  border-color: var(--gold);
+  color: var(--ink);
+}
+
+.channelBtn__ico {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* --- Responsive --- */
+@media (max-width: 680px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .officeGrid {
+    grid-template-columns: 1fr;
+  }
+}
